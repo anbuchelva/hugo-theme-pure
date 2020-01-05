@@ -6,7 +6,7 @@
     {{- if ne .Site.Params.since $current -}}
         {{- print .Site.Params.since }}  -
     {{- end }}
-    {{ $current }} 
+    {{ $current }}&nbsp;<a href="{{- .Site.Params.copyright.authorLink }}" target="_blank">{{- .Site.Params.copyright.author }}</a>
     <div class="publishby">
         {{- if .Site.Params.copyright.enableHugo }}
           Powered by <a href="https://gohugo.io" target="_blank">Hugo.</a>
