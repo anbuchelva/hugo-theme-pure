@@ -5,9 +5,11 @@
       <strong>{{ T "copyright_post" }}: </strong>
       <a href="{{- .Permalink }}" title="{{- .Title }}" target="_blank" rel="external">{{- .Permalink }}</a>
     </li>
-    <li class="post-copyright-license">
-      <strong>{{ T "copyright_license" }}：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
-    </li>
+    {{- if .Site.Params.licence.enable }}
+      <li class="post-copyright-license">
+        <strong>{{ T "copyright_license" }}：</strong><a href="{{ .Site.Params.licence.link }}" target="{{ .Site.Params.licence.target }}">{{ .Site.Params.licence.article }}</a>
+      </li>
+    {{ end }}
   </ul>
 </blockquote>
 {{ $profile := .Site.Params.profile }}
