@@ -67,6 +67,15 @@ params:
   since: 2017
   dateFormatToUse: "2006-01-02"
   enablePostCopyright: true
+  licence:
+    enable: true
+    link: "http://creativecommons.org/licenses/by/4.0/"
+    article: "Creative Commons Attribution 4.0 International License"
+  copyright:
+    enableHugo: false
+    enableTheme: false
+    authorLink: #link to author's profile
+    author: #author's name
   # the directory under content folder that you want to render
   mainSections: ["posts"]
   # Enable/Disable menu icons
