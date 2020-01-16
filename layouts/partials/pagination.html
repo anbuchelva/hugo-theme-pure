@@ -14,8 +14,8 @@
       {{- with $paginator.Next -}}
       <li class="next">
         <a href="{{ .URL }}">
+		  {{T "nextPage"}}
           <i class="icon icon-angle-right"></i>
-          {{T "nextPage"}}
         </a>
       </li>
       {{- end }}

@@ -5,6 +5,10 @@ nav_older:
   other: Older
 nav_newer:
   other: Newer
+prevPage:
+  other: Newer Posts
+nextPage:
+  other: Older Posts
 
 
 page_home:
