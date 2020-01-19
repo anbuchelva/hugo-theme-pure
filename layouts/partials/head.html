@@ -41,7 +41,7 @@ content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safe
 <meta name="generator" content="Hugo {{ .Site.Hugo.Version }} with theme pure" />
 <title>
 {{- block "title" . -}}
-{{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+{{ if .IsPage }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
 {{- end -}}
 </title>
 <!-- Canonical links -->
